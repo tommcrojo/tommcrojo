@@ -1,16 +1,17 @@
-## Hi there 👋
+# Hola, soy Tomás Campoy Rojo 👋
+> Data Scientist & ML Engineer transformando datos en soluciones
 
-<!--
-**tommcrojo/tommcrojo** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+## 💡 Lo que hago
+- **Automatizo procesos**: De semanas a minutos con Google Apps Script y Python
+- **Desarrollo pipelines ETL**: Integrando múltiples fuentes de datos con Polars y Pandas
+- **Creo modelos ML/DL**: Resolviendo problemas reales con TensorFlow y PyTorch
 
-Here are some ideas to get you started:
+## 🛠️ Tech stack
+`Python` `SQLite` `duckdb` `Machine Learning` `TensorFlow` `PyTorch` `ETL` `Power BI`
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## 🚀 Proyectos destacados
+- 🧠 NN Híbridas para compatibilidad académico-profesional
+- 📊 Sistema ETL para análisis macroeconómicos en tiempo real
+
+¿Tienes un proyecto interesante o buscas colaboración? ¡Contáctame! Siempre estoy abierto a nuevos desafíos y oportunidades.
+[LinkedIn](https://linkedin.com/in/tommcrojo) | tomascampoyrojo@gmail.com
