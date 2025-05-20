@@ -14,4 +14,5 @@
 - 📊 Sistema ETL para análisis macroeconómicos en tiempo real
 
 ¿Tienes un proyecto interesante o buscas colaboración? ¡Contáctame! Siempre estoy abierto a nuevos desafíos y oportunidades.
+
 [LinkedIn](https://linkedin.com/in/tommcrojo) | tomascampoyrojo@gmail.com
