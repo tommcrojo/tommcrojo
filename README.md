@@ -3,7 +3,6 @@ Data Engineer with experience building production pipelines that process 100K+ r
 
 **Currently:** Open to Data Engineer opportunities (remote/Valencia/Alicante/Murcia)
 
----
 
 ## Featured Projects
 
@@ -22,19 +21,17 @@ Academic program recommendation system on Databricks processing 120K+ profiles
 - **Impact:** 12% conversion improvement, <200ms API latency
 - **Tech:** PySpark, Databricks, Delta Lake, FastAPI, Docker
 
----
 
 ## Tech Stack
 
-| Data Engineering | Cloud & Infrastructure | Databases | Orchestration & Tools |
+| Data Engineering | Cloud & Infra | Databases | Orchestration & Tools |
 |------------------|------------------------|-----------|------------------------|
 | ![python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![sql](https://img.shields.io/badge/SQL-003B57?style=flat-square&logo=sqlite&logoColor=white) | ![aws](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazon-aws&logoColor=white) ![azure](https://img.shields.io/badge/Azure-0078D4?style=flat-square&logo=microsoft-azure&logoColor=white) | ![postgresql](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white) ![duckdb](https://img.shields.io/badge/DuckDB-FFF000?style=flat-square&logo=duckdb&logoColor=black) | ![airflow](https://img.shields.io/badge/Airflow-017CEE?style=flat-square&logo=apache-airflow&logoColor=white) ![dbt](https://img.shields.io/badge/dbt-FF694B?style=flat-square&logo=dbt&logoColor=white) |
-| ![polars](https://img.shields.io/badge/Polars-CD792C?style=flat-square&logo=polars&logoColor=white) ![pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white) | ![databricks](https://img.shields.io/badge/Databricks-FF3621?style=flat-square&logo=databricks&logoColor=white) ![docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white) | ![delta](https://img.shields.io/badge/Delta_Lake-003366?style=flat-square&logo=delta&logoColor=white) | ![git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white) ![github](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=github-actions&logoColor=white) |
-| ![spark](https://img.shields.io/badge/Apache_Spark-E25A1C?style=flat-square&logo=apache-spark&logoColor=white) | ![kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white) ![terraform](https://img.shields.io/badge/Terraform-7B42BC?style=flat-square&logo=terraform&logoColor=white) | | ![powerbi](https://img.shields.io/badge/Power_BI-F2C811?style=flat-square&logo=powerbi&logoColor=black) ![streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white) |
+| ![polars](https://img.shields.io/badge/Polars-CD792C?style=flat-square&logo=polars&logoColor=white) ![pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white) | ![databricks](https://img.shields.io/badge/Databricks-FF3621?style=flat-square&logo=databricks&logoColor=white) | ![delta](https://img.shields.io/badge/Delta_Lake-003366?style=flat-square&logo=delta&logoColor=white) | ![git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white) ![github](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=github-actions&logoColor=white) |
+| ![spark](https://img.shields.io/badge/Apache_Spark-E25A1C?style=flat-square&logo=apache-spark&logoColor=white) | ![docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white) | | ![powerbi](https://img.shields.io/badge/Power_BI-F2C811?style=flat-square&logo=powerbi&logoColor=black) ![streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white) |
 
-**Learning:** Apache Kafka, Redis, Advanced Kubernetes, System Design
+**Learning:** Apache Kafka, Redis, Kubernetes, System Design
 
----
 
 ## Certifications
 
