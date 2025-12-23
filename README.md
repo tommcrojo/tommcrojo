@@ -1,20 +1,71 @@
-### 👋 Hola, soy Tomás C.Rojo
-**Data Engineer & Consultor Tecnológico** transformando datos en soluciones automatizadas
+# Tomás Campoy Rojo
+**Data Engineer** | Python, SQL, Airflow, PySpark | AWS & Azure Certified
 
-### 💡 Lo que hago
-- **Pipelines ETL de alta performance**: Reduciendo tiempos de procesamiento de 3+ minutos a <1 segundo con Polars y Pandas
-- **Automatización inteligente**: Transformando procesos manuales de semanas a minutos con Python y Google Apps Script
-- **Modelos ML/DL production-ready**: Desarrollando sistemas predictivos con TensorFlow que resuelven problemas de negocio reales 
+Data Engineer with experience building production pipelines that process 100K+ records daily. Specialized in performance optimization (3.3x improvements), cloud-native architectures and containerized deployment. Certified AWS Data Engineer and Azure Databricks Platform Architect.
 
-### 🛠️ Tech Stack
-| Lenguajes | Data Science | Machine Learning | Visualización | Bases de Datos | Web & Automatización | ETL & Pipelines | Herramientas |
-|-----------|--------------|------------------|---------------|----------------|------------------------|------------------|--------------|
-| ![python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) | ![pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white) | ![tensorflow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white) | ![powerbi](https://img.shields.io/badge/Power_BI-F2C811?style=flat-square&logo=powerbi&logoColor=black) | ![postgresql](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white) | ![selenium](https://img.shields.io/badge/Selenium-43B02A?style=flat-square&logo=selenium&logoColor=white) | ![airflow](https://img.shields.io/badge/Airflow-017CEE?style=flat-square&logo=apache-airflow&logoColor=white) | ![git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white) |
-| ![sql](https://img.shields.io/badge/SQL-003B57?style=flat-square&logo=sqlite&logoColor=white) | ![numpy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white) | ![pytorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white) | ![matplotlib](https://img.shields.io/badge/Matplotlib-3776AB?style=flat-square&logo=python&logoColor=white) | ![sqlite](https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white) | ![beautifulsoup](https://img.shields.io/badge/BeautifulSoup-3776AB?style=flat-square&logo=python&logoColor=white) | ![etl](https://img.shields.io/badge/ETL_Pipelines-3776AB?style=flat-square&logo=python&logoColor=white) | ![jupyter](https://img.shields.io/badge/Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white) |
-|  | ![polars](https://img.shields.io/badge/Polars-CD792C?style=flat-square&logo=polars&logoColor=white) | ![scikit](https://img.shields.io/badge/ScikitLearn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white) | ![seaborn](https://img.shields.io/badge/Seaborn-3776AB?style=flat-square&logo=python&logoColor=white) | ![duckdb](https://img.shields.io/badge/DuckDB-FFF000?style=flat-square&logo=duckdb&logoColor=black) | ![googleapps](https://img.shields.io/badge/Google_Apps_Script-4285F4?style=flat-square&logo=google&logoColor=white) |  | ![vscode](https://img.shields.io/badge/VSCode-007ACC?style=flat-square&logo=visual-studio-code&logoColor=white) |
+**Currently:** Open to Data Engineer opportunities (remote/Valencia/Alicante/Murcia)
 
 ---
-💼 **Disponible para colaboraciones** en proyectos de ML, automatización y data engineering  
-🌍 **Abierto a oportunidades remotas** en Europa y Estados Unidos
 
-[LinkedIn](https://linkedin.com/in/tommcrojo) | [Email](mailto:tomascampoyrojo@gmail.com)
+## Featured Projects
+
+### [Student Data Pipeline](https://github.com/tommcrojo/student-data-pipeline)
+Production ETL with dbt + Apache Airflow processing 100K+ student records
+- **Impact:** 95% error reduction, 10x faster processing (15min → 90sec)
+- **Tech:** dbt, Airflow, Docker, DuckDB, PostgreSQL, GitHub Actions
+
+### [Security Analytics System](https://github.com/tommcrojo/security-analytics)
+ML-powered security monitoring with automated reporting for CamaraGestion.com
+- **Impact:** 15% improvement in threat detection, 12h weekly time saved
+- **Tech:** Python, scikit-learn (Isolation Forest, DBSCAN), PostgreSQL, GitHub Actions
+
+### [Databricks+PySpark Recommendation API](https://github.com/tommcrojo/admissions-ml-api)
+Academic program recommendation system on Databricks processing 120K+ profiles
+- **Impact:** 12% conversion improvement, <200ms API latency
+- **Tech:** PySpark, Databricks, Delta Lake, FastAPI, Docker
+
+---
+
+## Tech Stack
+
+| Data Engineering | Cloud & Infrastructure | Databases | Orchestration & Tools |
+|------------------|------------------------|-----------|------------------------|
+| ![python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![sql](https://img.shields.io/badge/SQL-003B57?style=flat-square&logo=sqlite&logoColor=white) | ![aws](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazon-aws&logoColor=white) ![azure](https://img.shields.io/badge/Azure-0078D4?style=flat-square&logo=microsoft-azure&logoColor=white) | ![postgresql](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white) ![duckdb](https://img.shields.io/badge/DuckDB-FFF000?style=flat-square&logo=duckdb&logoColor=black) | ![airflow](https://img.shields.io/badge/Airflow-017CEE?style=flat-square&logo=apache-airflow&logoColor=white) ![dbt](https://img.shields.io/badge/dbt-FF694B?style=flat-square&logo=dbt&logoColor=white) |
+| ![polars](https://img.shields.io/badge/Polars-CD792C?style=flat-square&logo=polars&logoColor=white) ![pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white) | ![databricks](https://img.shields.io/badge/Databricks-FF3621?style=flat-square&logo=databricks&logoColor=white) ![docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white) | ![delta](https://img.shields.io/badge/Delta_Lake-003366?style=flat-square&logo=delta&logoColor=white) | ![git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white) ![github](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=github-actions&logoColor=white) |
+| ![spark](https://img.shields.io/badge/Apache_Spark-E25A1C?style=flat-square&logo=apache-spark&logoColor=white) | ![kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white) ![terraform](https://img.shields.io/badge/Terraform-7B42BC?style=flat-square&logo=terraform&logoColor=white) | | ![powerbi](https://img.shields.io/badge/Power_BI-F2C811?style=flat-square&logo=powerbi&logoColor=black) ![streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white) |
+
+**Learning:** Apache Kafka, Redis, Advanced Kubernetes, System Design
+
+---
+
+## Certifications
+
+- 🏆 **AWS Certified Data Engineer Associate** (2025) - Kinesis, Glue, Lambda, Redshift
+- 🏆 **Azure Databricks Platform Architect** (2025) - Unity Catalog, ADLS Gen2, Private Link
+- 📊 **Machine Learning Specialization** - Stanford Online (2025)
+- 📈 **Google Professional Data Analytics Certificate** (2024)
+
+---
+
+## Experience Highlights
+
+**Data Engineer @ UCAM** (Feb 2025 - Present)
+- Built production ETL pipeline: 95% error reduction, 10x performance improvement
+- Deployed PySpark recommendation system processing 120K+ profiles on Databricks
+- Optimized data processing achieving 3.3x speedup with Polars over Pandas
+
+**Data Analyst @ UCAM** (Oct 2024 - Jan 2025)
+- Automated survey processing reducing 2-week manual work to <1 hour (3,700+ responses)
+- Created Power BI dashboards with Microsoft Fabric increasing KPI visibility 40%
+
+---
+
+## Get in Touch
+
+- **LinkedIn:** [linkedin.com/in/tommcrojo](https://linkedin.com/in/tommcrojo)
+- **Email:** tomascampoyrojo@gmail.com
+- **Location:** Murcia, España — Open to remote across Europe
+
+---
+
+**Status:** AWS & Azure certified | Actively seeking Data Engineer opportunities
