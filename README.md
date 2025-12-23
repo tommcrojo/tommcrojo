@@ -11,7 +11,7 @@ Production ETL with dbt + Apache Airflow processing 100K+ student records
 - **Impact:** 95% error reduction, 10x faster processing (15min → 90sec)
 - **Tech:** dbt, Airflow, Docker, DuckDB, PostgreSQL, GitHub Actions
 
-### [Security Analytics System](https://github.com/tommcrojo/security-analytics)
+### [Security Analytics System](https://github.com/tommcrojo/security-log-analytics)
 ML-powered security monitoring with automated reporting for CamaraGestion.com
 - **Impact:** 15% improvement in threat detection, 12h weekly time saved
 - **Tech:** Python, scikit-learn (Isolation Forest, DBSCAN), PostgreSQL, GitHub Actions
