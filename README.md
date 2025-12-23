@@ -40,7 +40,7 @@ Academic program recommendation system on Databricks processing 120K+ profiles
 - 📊 **Machine Learning Specialization** - Stanford Online (2025)
 - 📈 **Google Professional Data Analytics Certificate** (2024)
 
----
+
 
 ## Experience Highlights
 
@@ -53,7 +53,7 @@ Academic program recommendation system on Databricks processing 120K+ profiles
 - Automated survey processing reducing 2-week manual work to <1 hour (3,700+ responses)
 - Created Power BI dashboards with Microsoft Fabric increasing KPI visibility 40%
 
----
+
 
 ## Get in Touch
 
@@ -61,6 +61,6 @@ Academic program recommendation system on Databricks processing 120K+ profiles
 - **Email:** tomascampoyrojo@gmail.com
 - **Location:** Murcia, España — Open to remote across Europe
 
----
+
 
 **Status:** AWS & Azure certified | Actively seeking Data Engineer opportunities
