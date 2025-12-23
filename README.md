@@ -1,6 +1,4 @@
-# Tomás Campoy Rojo
-**Data Engineer** | Python, SQL, Airflow, PySpark | AWS & Azure Certified
-
+## Tomás Campoy Rojo
 Data Engineer with experience building production pipelines that process 100K+ records daily. Specialized in performance optimization (3.3x improvements), cloud-native architectures and containerized deployment. Certified AWS Data Engineer and Azure Databricks Platform Architect.
 
 **Currently:** Open to Data Engineer opportunities (remote/Valencia/Alicante/Murcia)
