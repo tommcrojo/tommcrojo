@@ -6,6 +6,11 @@ Data Engineer with experience building production pipelines that process 100K+ r
 
 ## Featured Projects
 
+### [AWS GDPR-Compliant Healthcare Data Pipeline](https://github.com/tommcrojo/aws-gdpr-healthcare-pipeline)
+GDPR-native AWS pipeline processing 10M+ daily health records with Article 17 compliance
+- **Impact:** <65s erasure SLA, 8,500+ rec/s throughput, $0.00005/record unit cost
+- **Tech:** AWS Glue, Kinesis Firehose, Redshift, Athena, Lambda, KMS, CloudFormation
+
 ### [Student Data Pipeline](https://github.com/tommcrojo/student-data-pipeline)
 Production ETL with dbt + Apache Airflow processing 100K+ student records
 - **Impact:** 95% error reduction, 10x faster processing (15min → 90sec)
