@@ -1,7 +1,7 @@
 ## Tomás Campoy Rojo
 Data Engineer with experience building production pipelines that process 100K+ records daily. Specialized in performance optimization (3.3x improvements), cloud-native architectures and containerized deployment. AWS Data Engineer Associate (in progress, 2026) and Azure Databricks Platform Architect certified.
 
-**Currently:** Open to Data Engineer opportunities (remote/Valencia/Alicante/Murcia)
+**Currently:** Open to Data Engineer opportunities (Valencia/Madrid or remote)
 
 
 ## Featured Projects
