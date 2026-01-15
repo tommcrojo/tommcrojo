@@ -1,5 +1,5 @@
 ## Tomás Campoy Rojo
-Data Engineer with experience building production pipelines that process 100K+ records daily. Specialized in performance optimization (3.3x improvements), cloud-native architectures and containerized deployment. Certified AWS Data Engineer and Azure Databricks Platform Architect.
+Data Engineer with experience building production pipelines that process 100K+ records daily. Specialized in performance optimization (3.3x improvements), cloud-native architectures and containerized deployment. AWS Data Engineer Associate (in progress, 2026) and Azure Databricks Platform Architect certified.
 
 **Currently:** Open to Data Engineer opportunities (remote/Valencia/Alicante/Murcia)
 
@@ -13,17 +13,17 @@ GDPR-native AWS pipeline processing 10M+ daily health records with Article 17 co
 
 ### [Student Data Pipeline](https://github.com/tommcrojo/student-data-pipeline)
 Production ETL with dbt + Apache Airflow processing 100K+ student records
-- **Impact:** 95% error reduction, 10x faster processing (15min → 90sec)
+- **Impact:** 90% error reduction, ~60% faster processing (15min → ~5min)
+- **Evolution:** Started as a Polars prototype (15min → 90s), then re-architected with Airflow + dbt for traceability, tests, and operability (nightly batch SLA)
 - **Tech:** dbt, Airflow, Docker, DuckDB, PostgreSQL, GitHub Actions
 
 ### [Security Analytics System](https://github.com/tommcrojo/security-log-analytics)
-ML-powered security monitoring with automated reporting for CamaraGestion.com
-- **Impact:** 15% improvement in threat detection, 12h weekly time saved
-- **Tech:** Python, scikit-learn (Isolation Forest, DBSCAN), PostgreSQL, GitHub Actions
+Automated security log analytics + monthly reporting pipeline for a real estate management company
+- **Impact:** ~12h/month manual work eliminated + 6.3x faster ETL (50K logs: 61ms vs 383ms)
+- **Tech:** Python, Polars, Supabase (PostgreSQL), Jinja2, Resend, GitHub Actions
 
-### [Databricks+PySpark Recommendation API](https://github.com/tommcrojo/admissions-ml-api)
-Academic program recommendation system on Databricks processing 120K+ profiles
-- **Impact:** 12% conversion improvement, <200ms API latency
+### [Admissions Data Engineering Pipeline & Inference API](https://github.com/tommcrojo/admissions-ml-api)
+Medallion (Bronze/Silver/Gold) pipeline producing ML-ready features with a downstream FastAPI inference API
 - **Tech:** PySpark, Databricks, Delta Lake, FastAPI, Docker
 
 
@@ -40,7 +40,7 @@ Academic program recommendation system on Databricks processing 120K+ profiles
 
 ## Certifications
 
-- 🏆 **AWS Certified Data Engineer Associate** (2025) - Kinesis, Glue, Lambda, Redshift
+- 🏆 **AWS Data Engineer Associate** (in progress, 2026) - Kinesis, Glue, Lambda, Redshift
 - 🏆 **Azure Databricks Platform Architect** (2025) - Unity Catalog, ADLS Gen2, Private Link
 - 📊 **Machine Learning Specialization** - Stanford Online (2025)
 - 📈 **Google Professional Data Analytics Certificate** (2024)
@@ -50,7 +50,7 @@ Academic program recommendation system on Databricks processing 120K+ profiles
 ## Experience Highlights
 
 **Data Engineer @ UCAM** (Feb 2025 - Present)
-- Built production ETL pipeline: 95% error reduction, 10x performance improvement
+- Built production ETL pipeline: 90% error reduction, ~60% runtime reduction (15min → ~5min)
 - Deployed PySpark recommendation system processing 120K+ profiles on Databricks
 - Optimized data processing achieving 3.3x speedup with Polars over Pandas
 
@@ -68,4 +68,4 @@ Academic program recommendation system on Databricks processing 120K+ profiles
 
 
 
-**Status:** AWS & Azure certified | Actively seeking Data Engineer opportunities
+**Status:** Azure certified | AWS Data Engineer Associate in progress | Actively seeking Data Engineer opportunities
