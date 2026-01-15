@@ -63,8 +63,9 @@ Medallion (Bronze/Silver/Gold) pipeline producing ML-ready features with a downs
 ## Get in Touch
 
 - **LinkedIn:** [linkedin.com/in/tommcrojo](https://linkedin.com/in/tommcrojo)
+- **Manfred:** [https://mnf.red/tommcrojo](https://mnf.red/tommcrojo)
 - **Email:** tomascampoyrojo@gmail.com
-- **Location:** Murcia, España — Open to remote across Europe
+- **Location:** Murcia, España — Open to remote or relocation
 
 
 
