@@ -1,0 +1,21 @@
+---
+import Base from '../../layouts/Base.astro';
+---
+<Base type="article" title="Retrieval beyond embeddings — Tomás Campoy Rojo" description="Why strong retrieval systems combine lexical search, dense retrieval, reranking, filtering, evidence quality and evaluation instead of relying on vector similarity alone.">
+  <section class="page-intro"><div class="eyebrow">Retrieval · Search · Reranking</div><h1>Retrieval beyond embeddings.</h1><p>Dense retrieval is powerful, but vector similarity is only one signal in a good retrieval stack.</p></section>
+  <article class="article">
+    <p class="kicker">The goal of retrieval is not to find text that feels semantically nearby. It is to surface the best evidence for the current question with enough recall, precision and provenance to support a downstream decision.</p>
+    <h2>Lexical search still matters</h2>
+    <p>Identifiers, error strings, API names, product codes and exact phrases are often better served by BM25-style lexical retrieval than by embeddings. Dense search helps with paraphrase and semantic similarity; lexical search protects exact-match recall.</p>
+    <h2>Hybrid first, rerank second</h2>
+    <p>A practical pattern is to retrieve a generous candidate set from both lexical and dense indices, merge and deduplicate it, then use a stronger reranker on the smaller pool. This separates cheap recall from expensive precision.</p>
+    <h2>Metadata is part of relevance</h2>
+    <p>Freshness, source authority, document type, permissions and project scope should influence ranking. A semantically perfect result can still be wrong for the task if it is stale, low-quality or belongs to the wrong context.</p>
+    <h2>Chunking is an information problem</h2>
+    <p>Chunks should preserve enough local meaning to be retrievable without destroying the structure needed to answer the question. Code, tables, documentation and conversational history often need different segmentation strategies.</p>
+    <h2>Measure the retrieval layer</h2>
+    <p>Retrieval should have its own eval set. Useful metrics include recall at k, reciprocal rank, reranker lift, citation correctness and the rate at which the system retrieves conflicting or stale evidence. If retrieval quality is invisible, downstream model quality becomes much harder to diagnose.</p>
+    <h2>Search is a system, not a model call</h2>
+    <p>The strongest retrieval stacks tend to look like small search engines: multiple indices, filters, ranking stages, quality signals and observability. Embeddings are an important component, not the architecture.</p>
+  </article>
+</Base>
