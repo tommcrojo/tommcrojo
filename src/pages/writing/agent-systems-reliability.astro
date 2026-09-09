@@ -1,0 +1,20 @@
+---
+import Base from '../../layouts/Base.astro';
+---
+<Base type="article" title="The agent is the easy part — Tomás Campoy Rojo" description="Why reliable AI-agent systems depend on persistent state, verification, retries, isolation, observability and explicit orchestration around the model.">
+  <section class="page-intro"><div class="eyebrow">AI systems · Reliability</div><h1>The agent is the easy part.</h1><p>Once an AI agent is allowed to touch real systems, model intelligence stops being the only hard problem. Reliability moves into the harness around it.</p></section>
+  <article class="article">
+    <p class="kicker">A strong model can choose a good next action. A dependable system must also know what already happened, whether the action succeeded, what to do after failure and when to stop.</p>
+    <h2>From prompt to system</h2>
+    <p>Agent demos often compress the architecture into a loop: give the model context, let it choose a tool, append the result, repeat. That is enough to demonstrate capability. It is not enough to operate workflows that have side effects, long runtimes or partial failure.</p>
+    <p>The moment an agent sends a message, edits code, changes a record or navigates a stateful application, the surrounding system starts to look less like a chatbot and more like a workflow engine.</p>
+    <h2>The reliability layer</h2>
+    <p>The primitives I care about are deliberately boring: persistent state, explicit transitions, idempotent actions, bounded retries, timeouts, isolation, verification and observability. They make it possible to answer questions such as: did this step actually finish, can it be replayed safely, and what evidence do we have that the final state is correct?</p>
+    <h2>Maker and checker</h2>
+    <p>One useful pattern is to separate generation from verification. The component that makes a change should not be the only component deciding that the change is correct. Verification can be deterministic — tests, schemas, screenshots, queries — or model-based when the output requires judgement.</p>
+    <h2>State beats memory theatre</h2>
+    <p>Durable state should record facts the workflow can rely on: completed steps, artifacts, tool outputs, approvals and checkpoints. This is different from giving a model a large conversational memory and hoping it reconstructs operational truth correctly.</p>
+    <h2>The architectural question</h2>
+    <p>When evaluating an agent system, I increasingly ask a different question: if the model disappeared from the diagram, would the remaining system still have a coherent state machine, recovery strategy and audit trail? If the answer is no, the architecture is probably delegating too much reliability to inference.</p>
+  </article>
+</Base>
