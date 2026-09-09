@@ -1,0 +1,21 @@
+---
+import Base from '../../layouts/Base.astro';
+---
+<Base type="article" title="Computer Use outside the demo — Tomás Campoy Rojo" description="What changes when browser and desktop agents meet real machines, permissions, persistent profiles, Wayland, brittle UI state and verification requirements.">
+  <section class="page-intro"><div class="eyebrow">Computer Use · Tooling · Sandboxing</div><h1>Computer Use outside the demo.</h1><p>GUI agents look simple when the environment is clean. Real machines introduce state, permissions and display-system constraints that quickly turn interaction into infrastructure.</p></section>
+  <article class="article">
+    <p class="kicker">The difficult part of computer use is rarely clicking a button. It is controlling the environment around the click well enough that the action is reproducible, observable and safe.</p>
+    <h2>Browser state is operational state</h2>
+    <p>Authentication, cookies, extensions, profiles, local storage and open tabs can all affect the next action. For workflows that depend on logged-in applications, persistent browser profiles become part of the system design rather than an implementation detail.</p>
+    <h2>The desktop is not one abstraction</h2>
+    <p>On macOS, automation paths and permissions differ from Linux. On Linux, X11 and Wayland expose very different capabilities to automation tooling. XWayland compatibility can help individual applications while still leaving gaps in whole-desktop control.</p>
+    <h2>Isolation matters</h2>
+    <p>Running multiple agents against one mutable desktop creates hidden coupling. Separate browser profiles, worktrees, containers or isolated sessions make concurrent work easier to reason about and reduce the chance that one agent corrupts another agent’s state.</p>
+    <h2>Verification cannot stop at the action</h2>
+    <p>A successful click does not prove a successful workflow. The agent should verify the resulting state: inspect the page, query the backend where possible, read the generated artifact or compare the final UI against an expected condition.</p>
+    <h2>Use the narrowest interface that works</h2>
+    <p>APIs and structured tools are preferable when they expose the required operation cleanly. Computer use becomes valuable when the application only exposes important behavior through a graphical interface, or when the workflow itself needs to be validated through the same interface a human uses.</p>
+    <h2>The useful abstraction is a controlled workspace</h2>
+    <p>For serious agent work, I increasingly think in terms of a workspace with explicit files, browser state, credentials, permissions, checkpoints and evidence. The GUI controller is only one tool inside that environment.</p>
+  </article>
+</Base>
