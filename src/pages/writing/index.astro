@@ -1,0 +1,13 @@
+---
+import Base from '../../layouts/Base.astro';
+const posts=[
+['Designing GDPR erasure into an AWS data pipeline','Privacy-by-design, erasure SLAs, pseudonymization and why deletion touches the data plane.','/writing/aws-gdpr-healthcare-pipeline','AWS · Privacy · Architecture'],
+['The part of medallion architecture that actually matters','Why Bronze/Silver/Gold is useful only when each boundary carries a real contract.','/writing/medallion-architecture-azure','Databricks · Delta · Data quality'],
+['Before scaling infrastructure, profile the dataframe layer','A practical Pandas → Polars migration note with benchmark results and the execution-model changes behind them.','/writing/pandas-to-polars','Polars · Performance'],
+['Exactly-once is an end-to-end property','Producer idempotence, Spark checkpoints and transactional lakehouse storage in one streaming path.','/writing/streaming-exactly-once','Kafka · Spark · Iceberg']
+];
+---
+<Base title="Writing — Tomás Campoy Rojo" description="Technical writing by Tomás Campoy Rojo on data engineering, AWS, Databricks, Spark, Kafka, Polars, data quality and architecture.">
+<section class="page-intro"><div class="eyebrow">Writing</div><h1>Technical notes from things I have built, profiled or had to reason through.</h1><p>Short, concrete pieces intended to be useful to another engineer.</p></section>
+<section class="section shell"><div class="card-grid">{posts.map(([title,desc,url,meta])=><a class="card" href={url}><div><div class="meta">{meta}</div><h3>{title}</h3><p>{desc}</p></div><span>Read →</span></a>)}</div></section>
+</Base>

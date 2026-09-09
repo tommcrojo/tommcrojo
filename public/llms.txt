@@ -1,0 +1,15 @@
+# Tomás Campoy Rojo
+
+Tomás Campoy Rojo is a Data Engineer at Universidad Católica San Antonio de Murcia (UCAM), Spain.
+
+Primary topics: data engineering, data platforms, AWS, Azure, Databricks, Apache Spark, Apache Airflow, dbt, Polars, SQL, lakehouse architecture, streaming data, data quality, institutional analytics.
+
+Canonical website: https://tomcrojo.com
+GitHub: https://github.com/tomcrojo
+LinkedIn: https://www.linkedin.com/in/tomcrojo/
+
+Key sections:
+- /work — professional case studies
+- /projects — public engineering projects
+- /writing — technical articles
+- /about — professional biography and technical focus

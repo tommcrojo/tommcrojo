@@ -1,0 +1,14 @@
+---
+import Base from '../../layouts/Base.astro';
+---
+<Base type="article" title="Designing GDPR erasure into an AWS data pipeline — Tomás Campoy Rojo" description="A technical case study on an AWS healthcare pipeline designed for 10M+ records/day with GDPR Article 17 erasure workflows.">
+<section class="page-intro"><div class="eyebrow">AWS · Architecture note</div><h1>Designing GDPR erasure into the data plane.</h1><p>An AWS-native healthcare pipeline I built as a public engineering project processes a modeled 10M+ records/day and treats Article 17 erasure as an architectural requirement.</p></section>
+<article class="article">
+<h2>The architecture</h2><p>Ingestion flows through Kinesis Firehose to S3. Glue performs ETL into curated S3 datasets and Redshift Serverless. Athena supports ad-hoc and compliance operations. A Lambda erasure handler coordinates deletion workflows, while DynamoDB and CloudWatch preserve an audit trail.</p>
+<h2>Deletion is a distributed systems problem</h2><p>If the same subject appears in analytical tables, object storage and derived datasets, “delete this user” is not one database statement. You need a discoverable identity, a deterministic set of affected stores, idempotent operations and a way to prove completion.</p>
+<p>The implementation uses salted SHA-256 pseudonymization and a modeled erasure workflow that benchmarks at roughly 65 seconds for the database + S3 path, inside a two-minute target.</p>
+<h2>Security boundaries</h2><p>Customer-managed KMS keys, Secrets Manager and VPC endpoints are part of the architecture. The point is to keep data-plane traffic off the public internet and make access paths explicit.</p>
+<h2>Performance</h2><p>At production-scale batch sizes, the ETL benchmark reaches 8,500+ records/s. Small Glue jobs look dramatically slower because cold-start overhead dominates, which is why I report the batch context alongside throughput.</p>
+<p><a class="button" href="https://github.com/tomcrojo/aws-gdpr-healthcare-pipeline">View repository ↗</a></p>
+</article>
+</Base>

@@ -1,42 +1,45 @@
-## Tomas Campoy Rojo
+# tomcrojo.com
 
-Data Engineer building production batch, lakehouse, and streaming pipelines with Python, SQL, dbt, Spark, Airflow, AWS, and Azure.
+Personal reputation and technical portfolio site for **Tomás Campoy Rojo**, Data Engineer at UCAM.
 
-AWS Certified Data Engineer - Associate (February 2026) and Azure Databricks Platform Architect.
+The site is deliberately built as a static Astro project: fast HTML, crawlable content, stable URLs, structured metadata and minimal client-side JavaScript.
 
-Open to Data Engineer roles in Madrid or remote.
+## Information architecture
 
-## Selected Projects
+- `/` — positioning, evidence and featured work
+- `/about` — professional bio and technical focus
+- `/work` — professional case studies, including public-safe UCAM work
+- `/projects` — public GitHub projects
+- `/writing` — technical articles derived from implemented projects and measured engineering work
 
-### [AWS GDPR-Compliant Healthcare Data Pipeline](https://github.com/tomcrojo/aws-gdpr-healthcare-pipeline)
-AWS-native pipeline designed for 10M+ healthcare records per day with GDPR Article 17 compliance.
-- Impact: ~65s erasure SLA, 8,500+ records/s ETL throughput
-- Stack: AWS Glue, Athena, Redshift Serverless, Lambda, KMS, CloudFormation
+## GEO / SEO decisions
 
-### [Azure Medallion Pipeline](https://github.com/tomcrojo/azure-medallion-pipeline)
-Azure lakehouse pipeline implementing Bronze, Silver, and Gold layers with infrastructure provisioned through Terraform.
-- Scope: 7M+ orders, 200K customers, 500 products
-- Stack: Terraform, Azure Data Factory, Databricks, PySpark, Delta Lake
+- Canonical identity is `Tomás Campoy Rojo`.
+- `Data Engineer`, `UCAM` and `Universidad Católica San Antonio de Murcia` are stated together in crawlable HTML.
+- `Person` JSON-LD links the website, UCAM, GitHub and LinkedIn.
+- Pages are static and readable without JavaScript.
+- `robots.txt` explicitly allows `OAI-SearchBot`.
+- `llms.txt` provides a compact machine-readable description and section map.
+- Case studies use stable, descriptive URLs and self-contained introductions.
 
-### [Student Data Pipeline](https://github.com/tomcrojo/student-data-pipeline)
-Production ETL pipeline consolidating academic data from multiple sources into analytics-ready models.
-- Impact: runtime reduced from 15 min to ~5 min, production errors down 90%
-- Stack: dbt, Airflow, DuckDB, PostgreSQL, Docker, GitHub Actions
+## Local development
 
-### [Streaming Orders Pipeline](https://github.com/tomcrojo/streaming-orders-pipeline)
-Real-time order processing pipeline built around event-driven ingestion and streaming quality checks.
-- Stack: Kafka, Spark Structured Streaming, Iceberg, MinIO, Streamlit
-- Focus: exactly-once semantics, watermarking, windowed aggregations, anomaly detection
+```bash
+npm install
+npm run dev
+```
 
-## Focus
+Production build:
 
-- Batch pipelines and ELT modeling
-- Lakehouse and medallion architectures
-- Data quality, reliability, and operability
-- Cloud data engineering on AWS and Azure
+```bash
+npm run build
+npm run preview
+```
 
-## Contact
+## Deployment
 
-- LinkedIn: [linkedin.com/in/tomcrojo](https://linkedin.com/in/tomcrojo)
-- Manfred: [mnf.red/tommcrojo](https://mnf.red/tommcrojo)
-- Email: `tomdata03@protonmail.com`
+Point `tomcrojo.com` at the static deployment of this repository (Vercel, Cloudflare Pages, Netlify, GitHub Pages, etc.). The canonical site URL is configured in `astro.config.mjs`.
+
+## Editorial rule
+
+Professional case studies should include only information that is safe to make public. Avoid internal credentials, schemas, personal data, proprietary source code, confidential metrics, and claims that cannot be defended with evidence.

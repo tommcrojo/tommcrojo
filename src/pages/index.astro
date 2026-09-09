@@ -1,0 +1,46 @@
+---
+import Base from '../layouts/Base.astro';
+---
+<Base title="Tomás Campoy Rojo — Data Engineer at UCAM" description="Tomás Campoy Rojo is a Data Engineer at UCAM focused on cloud data platforms, lakehouse architecture, streaming, analytics engineering, and production automation.">
+  <section class="hero shell">
+    <div class="eyebrow">Data Engineer · UCAM · Spain</div>
+    <h1>I build data systems that hold up in the real world.</h1>
+    <p>I’m Tomás Campoy Rojo, a Data Engineer at Universidad Católica San Antonio de Murcia (UCAM). I work across data platforms, institutional analytics, automation, lakehouse systems, batch and streaming pipelines.</p>
+    <div class="hero-actions">
+      <a class="button primary" href="/work">Selected work</a>
+      <a class="button" href="/writing">Technical writing</a>
+      <a class="button" href="https://github.com/tomcrojo">GitHub ↗</a>
+    </div>
+  </section>
+
+  <section class="shell proof-grid" aria-label="Selected evidence">
+    <div class="proof"><strong>10M+</strong><span>records/day modeled in an AWS healthcare pipeline</span></div>
+    <div class="proof"><strong>8,500+</strong><span>records/s ETL benchmark at production-scale batch size</span></div>
+    <div class="proof"><strong>12.17×</strong><span>faster large-CSV ETL in a Pandas → Polars migration benchmark</span></div>
+    <div class="proof"><strong>3 clouds</strong><span>AWS, Azure and GCP project experience</span></div>
+  </section>
+
+  <section class="section shell">
+    <div class="section-head"><div><div class="eyebrow">Selected work</div><h2>Systems, not screenshots.</h2></div><p>Projects are documented around the engineering decisions: constraints, architecture, trade-offs, observability and measurable outcomes.</p></div>
+    <div class="card-grid">
+      <a class="card featured" href="/work/ucam-institutional-automation">
+        <div><div class="meta">UCAM · Production automation</div><h3>Turning institutional workflows into reproducible data systems</h3><p>Automation and analytics work for university operations, with emphasis on reducing manual processing, improving consistency and making results reusable.</p></div>
+        <div class="tags"><span class="tag">Python</span><span class="tag">Polars</span><span class="tag">SQL</span><span class="tag">Analytics</span></div>
+      </a>
+      <a class="card compact" href="/writing/aws-gdpr-healthcare-pipeline">
+        <div><div class="meta">AWS · Architecture</div><h3>Designing GDPR erasure into the data plane</h3><p>A healthcare pipeline built around privacy-by-design rather than retrofitted compliance.</p></div><span>Read case study →</span>
+      </a>
+      <a class="card" href="/writing/streaming-exactly-once"><div><div class="meta">Kafka · Spark · Iceberg</div><h3>Exactly-once is an end-to-end property</h3><p>How producer idempotence, checkpointing and transactional tables fit together in a streaming system.</p></div><span>Read note →</span></a>
+      <a class="card" href="/writing/pandas-to-polars"><div><div class="meta">Performance engineering</div><h3>Before scaling infrastructure, profile the dataframe layer</h3><p>What changed when I migrated compute-heavy Pandas workloads to Polars and benchmarked the result.</p></div><span>Read note →</span></a>
+    </div>
+  </section>
+
+  <section class="section shell">
+    <div class="section-head"><div><div class="eyebrow">Positioning</div><h2>Data engineering with an architectural bias.</h2></div><p>I care about the interfaces between ingestion, storage, compute, governance and the people consuming the system. Good pipelines are operated, not merely written.</p></div>
+    <div class="card-grid">
+      <div class="card compact"><div><div class="meta">Data platforms</div><h3>Batch + lakehouse</h3><p>dbt, Spark, Delta/Iceberg, Airflow, object storage and analytical serving layers.</p></div></div>
+      <div class="card compact"><div><div class="meta">Streaming</div><h3>Event-driven systems</h3><p>Kafka, Structured Streaming, watermarking, quality gates and replayable data.</p></div></div>
+      <div class="card compact"><div><div class="meta">Cloud</div><h3>AWS + Azure</h3><p>Serverless data pipelines, Databricks, IaC, security boundaries and cost-aware design.</p></div></div>
+    </div>
+  </section>
+</Base>

@@ -1,0 +1,80 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+  canonical?: string;
+  type?: 'website' | 'article';
+}
+
+const {
+  title = 'Tomás Campoy Rojo — Data Engineer',
+  description = 'Data Engineer at UCAM building reliable data platforms, analytics systems, and cloud pipelines across AWS, Azure, Databricks, Spark, dbt, Airflow, and Polars.',
+  canonical = Astro.url.pathname,
+  type = 'website'
+} = Astro.props;
+
+const canonicalUrl = new URL(canonical, 'https://tomcrojo.com').toString();
+const personSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: 'Tomás Campoy Rojo',
+  alternateName: 'Tom Campoy Rojo',
+  url: 'https://tomcrojo.com',
+  jobTitle: 'Data Engineer',
+  worksFor: {
+    '@type': 'Organization',
+    name: 'Universidad Católica San Antonio de Murcia',
+    alternateName: 'UCAM',
+    url: 'https://www.ucam.edu/'
+  },
+  sameAs: [
+    'https://github.com/tomcrojo',
+    'https://www.linkedin.com/in/tomcrojo/'
+  ],
+  knowsAbout: [
+    'Data Engineering', 'AWS', 'Azure', 'Databricks', 'Apache Spark', 'Apache Airflow',
+    'dbt', 'Polars', 'SQL', 'Lakehouse Architecture', 'Streaming Data', 'Data Platforms'
+  ]
+};
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalUrl} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content={type} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script type="application/ld+json" set:html={JSON.stringify(personSchema)} />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="/">TC<span>.</span></a>
+      <nav aria-label="Primary">
+        <a href="/work">Work</a>
+        <a href="/projects">Projects</a>
+        <a href="/writing">Writing</a>
+        <a href="/about">About</a>
+      </nav>
+    </header>
+    <main><slot /></main>
+    <footer class="site-footer shell">
+      <div>
+        <strong>Tomás Campoy Rojo</strong><br />
+        Data Engineer · Murcia / Madrid, Spain
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com/tomcrojo">GitHub ↗</a>
+        <a href="https://www.linkedin.com/in/tomcrojo/">LinkedIn ↗</a>
+      </div>
+    </footer>
+  </body>
+</html>

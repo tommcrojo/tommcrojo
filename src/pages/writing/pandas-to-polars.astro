@@ -1,0 +1,13 @@
+---
+import Base from '../../layouts/Base.astro';
+---
+<Base type="article" title="Before scaling infrastructure, profile the dataframe layer — Tomás Campoy Rojo" description="Benchmark notes from migrating Pandas workloads to Polars, including 12.17x faster large-CSV ETL in one test.">
+<section class="page-intro"><div class="eyebrow">Polars · Performance</div><h1>Before scaling infrastructure, profile the dataframe layer.</h1><p>I built a reusable migration command that benchmarks Pandas code, rewrites it to Polars patterns and benchmarks again. The useful part is understanding where the speedup comes from.</p></section>
+<article class="article">
+<h2>Observed results</h2><p>Across the workloads I used to validate the approach, data aggregations improved by about 8.2×, one API processing path cut latency by roughly 50%, and a 500K-row CSV ETL benchmark improved by 12.17×.</p>
+<h2>Why syntax translation is not enough</h2><p><code>pd.read_csv</code> becoming <code>pl.read_csv</code> leaves performance on the table. The larger gains come from changing the execution model: lazy scanning, expression-based transformations, fewer materializations, better type discipline and window expressions instead of Python-level callbacks.</p>
+<h2>A good migration loop</h2><ol><li>Benchmark the current workload.</li><li>Identify the expensive stages rather than rewriting everything.</li><li>Port the transformation semantics.</li><li>Use Polars-native idioms.</li><li>Run correctness tests.</li><li>Benchmark again with the same dataset and environment.</li></ol>
+<h2>The architectural implication</h2><p>A 10× reduction in compute time can change what infrastructure you need. Optimization at the execution layer is often cheaper than scaling out a badly shaped workload.</p>
+<p><a class="button" href="https://github.com/tomcrojo/pandas-polars-migration-claude">View repository ↗</a></p>
+</article>
+</Base>
