@@ -1,0 +1,15 @@
+---
+import Base from '../../layouts/Base.astro';
+const projects = [
+  ['AWS GDPR-Compliant Healthcare Pipeline','AWS-native pipeline designed for 10M+ healthcare records/day, including Article 17 erasure workflows, KMS, VPC endpoints, Redshift Serverless and Athena.','AWS · Glue · Lambda · S3 · Redshift','https://github.com/tomcrojo/aws-gdpr-healthcare-pipeline'],
+  ['Azure Medallion Pipeline','Production-oriented Bronze → Silver → Gold lakehouse on Azure with Terraform, ADF, Databricks, PySpark, Delta Lake and data-quality observability.','Azure · Databricks · Terraform · Delta','https://github.com/tomcrojo/azure-medallion-pipeline'],
+  ['Streaming Orders Pipeline','Event-driven order processing using Kafka, Spark Structured Streaming and Iceberg, including watermarking, quarantine flows and anomaly detection.','Kafka · Spark · Iceberg · Nessie','https://github.com/tomcrojo/streaming-orders-pipeline'],
+  ['Student Data Pipeline','Academic-data ETL with Airflow, dbt and DuckDB, modeled through staging, intermediate and marts layers with explicit quality tests.','Airflow · dbt · DuckDB · Docker','https://github.com/tomcrojo/student-data-pipeline'],
+  ['Pandas → Polars Migration Command','A reusable Claude Code command that benchmarks, migrates and re-benchmarks Pandas workloads using optimized Polars patterns. It sits at the intersection of performance engineering and AI-assisted developer tooling.','Polars · Python · AI tooling','https://github.com/tomcrojo/pandas-polars-migration-claude'],
+  ['Security Log Analytics','Automated ETL and monthly reporting for security logs, using Polars and scheduled GitHub Actions to convert raw telemetry into stakeholder-facing metrics.','Polars · PostgreSQL · GitHub Actions','https://github.com/tomcrojo/security-log-analytics']
+];
+---
+<Base title="Projects — Tomás Campoy Rojo" description="Selected public engineering projects by Tomás Campoy Rojo across data platforms, cloud, streaming, performance and AI-assisted tooling.">
+  <section class="page-intro"><div class="eyebrow">Projects</div><h1>Public builds that show the engineering, not only the outcome.</h1><p>Architecture, data quality, performance, observability, deployment details and tooling decisions are kept in the repositories. The portfolio is intentionally weighted toward systems that expose real trade-offs.</p></section>
+  <section class="section shell"><div class="card-grid">{projects.map(([name,desc,meta,url]) => <a class="card" href={url}><div><div class="meta">{meta}</div><h3>{name}</h3><p>{desc}</p></div><span>View repository ↗</span></a>)}</div></section>
+</Base>

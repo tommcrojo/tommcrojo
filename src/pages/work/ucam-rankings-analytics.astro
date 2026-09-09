@@ -1,0 +1,11 @@
+---
+import Base from '../../layouts/Base.astro';
+---
+<Base type="article" title="Institutional rankings analytics at UCAM — Tomás Campoy Rojo" description="Case study on building reproducible data workflows for institutional rankings and analytics at UCAM.">
+  <section class="page-intro"><div class="eyebrow">UCAM · Institutional analytics</div><h1>Rankings work is a data-engineering problem before it is a reporting problem.</h1><p>At UCAM, part of my work sits around institutional rankings and analytics: reconciling sources, standardizing metrics and turning recurring submissions into repeatable processes.</p></section>
+  <article class="article">
+    <h2>Why rankings are technically difficult</h2><p>The visible output is a score or position. Underneath it are definitions that change, source systems that disagree, historical values that must remain explainable, and submission windows where reproducibility matters more than ad-hoc speed.</p>
+    <h2>System design principles</h2><ul><li>Keep source data separable from normalized analytical models.</li><li>Version metric definitions and transformation rules.</li><li>Preserve provenance for values used in submissions.</li><li>Automate recurring extraction and validation where possible.</li><li>Make exception handling explicit instead of burying it in spreadsheets.</li></ul>
+    <h2>Outcome</h2><p>The goal is to move institutional analysis from person-dependent spreadsheet knowledge toward repeatable data workflows that can be inspected, handed over and improved.</p>
+  </article>
+</Base>

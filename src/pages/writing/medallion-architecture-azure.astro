@@ -1,0 +1,14 @@
+---
+import Base from '../../layouts/Base.astro';
+---
+<Base type="article" title="The part of medallion architecture that actually matters — Tomás Campoy Rojo" description="A technical note on Bronze, Silver and Gold boundaries in an Azure Databricks lakehouse.">
+<section class="page-intro"><div class="eyebrow">Azure · Databricks</div><h1>The part of medallion architecture that actually matters.</h1><p>Bronze, Silver and Gold are useful names only if each transition represents a real improvement in contract, quality or usability.</p></section>
+<article class="article">
+<h2>Project context</h2><p>I built an Azure lakehouse project over a synthetic e-commerce dataset of 7M+ orders, 200K customers and 500 products. Infrastructure is provisioned with Terraform; ADF handles ingestion/orchestration; Databricks and PySpark transform data into Delta Lake layers.</p>
+<h2>Bronze should preserve evidence</h2><p>Raw data needs enough fidelity to support replay and forensic debugging. “Clean it on arrival” is attractive until you discover that the cleaning rule was wrong.</p>
+<h2>Silver should enforce the contract</h2><p>This is where schema, types, referential expectations, null behavior and business-valid ranges become explicit. In the project, Great Expectations suites are attached to layer boundaries so quality failures can stop propagation.</p>
+<h2>Gold should optimize consumption</h2><p>Gold is not “the third folder.” It is the set of models shaped for actual downstream questions: aggregated, semantically stable and cheap to query.</p>
+<h2>Observability closes the loop</h2><p>Pass rate, volume, freshness, null rates and schema drift are tracked over time. A pipeline that is correct once is a demo; a pipeline that tells you when it stops being correct is an operable system.</p>
+<p><a class="button" href="https://github.com/tomcrojo/azure-medallion-pipeline">View repository ↗</a></p>
+</article>
+</Base>

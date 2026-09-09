@@ -1,0 +1,17 @@
+---
+import Base from '../../layouts/Base.astro';
+---
+<Base type="article" title="Security log analytics consulting case — Tomás Campoy Rojo" description="Consulting case study: automating security-log ETL and stakeholder reporting with Python, Polars, PostgreSQL and GitHub Actions.">
+  <section class="page-intro"><div class="eyebrow">Client consulting · Data engineering</div><h1>Turning raw security telemetry into a recurring decision system.</h1><p>A client engagement where the useful deliverable was not another dashboard: it was a repeatable pipeline that converted operational logs into security metrics and delivered them automatically.</p></section>
+  <article class="article">
+    <h2>Problem</h2>
+    <p>A property-management company was collecting roughly 50,000 web-security log records per month in PostgreSQL, but the data was not being transformed into a useful operational view. Answering basic questions about blocked threats, traffic quality, geography and middleware performance required manual analysis.</p>
+    <h2>System</h2>
+    <p>I designed an automated ETL and reporting workflow around Python and Polars. The pipeline extracts the relevant monthly window, cleans and classifies the telemetry, calculates stakeholder-facing metrics, renders an HTML report and distributes it automatically. GitHub Actions provides the recurring orchestration.</p>
+    <h2>Outcome</h2>
+    <p>The workflow removed roughly 12 hours per month of manual reporting work. In the public benchmark included with the project, the Polars implementation processes the 50,000-row mock workload in 61 ms versus 383 ms with Pandas, a 6.3× speedup.</p>
+    <h2>Engineering lesson</h2>
+    <p>The value came from making the analysis operational. A script that runs once is useful; a controlled workflow with explicit extraction windows, repeatable transformations, automated delivery and observable outputs becomes part of how the organization works.</p>
+    <p><a href="https://github.com/tomcrojo/security-log-analytics">View the public implementation on GitHub ↗</a></p>
+  </article>
+</Base>

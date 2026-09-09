@@ -1,0 +1,13 @@
+---
+import Base from '../../layouts/Base.astro';
+---
+<Base type="article" title="Data pipeline performance at UCAM — Tomás Campoy Rojo" description="Case study on optimizing ETL workloads with Polars and columnar execution in institutional analytics.">
+  <section class="page-intro"><div class="eyebrow">UCAM · Performance engineering</div><h1>When a three-minute ETL becomes a two-second interaction.</h1><p>A practical lesson from institutional analytics: architecture matters, but the dataframe execution model can dominate latency long before infrastructure becomes the bottleneck.</p></section>
+  <article class="article">
+    <h2>Context</h2><p>Some analytical workflows were implemented around row-oriented or eager dataframe patterns that repeatedly parsed, copied and aggregated the same data. The user experience was poor enough that iterative analysis became cumbersome.</p>
+    <h2>What changed</h2><p>I migrated relevant transformations toward Polars and columnar execution patterns: typed schemas, expression-based transformations, fewer materializations, and lazy operations where they provided measurable benefit.</p>
+    <p>For one internal ETL workload, runtime dropped from more than three minutes to roughly two seconds.</p>
+    <h2>The important part</h2><p>The win did not come from replacing a library name in <code>requirements.txt</code>. The useful change was to rethink the transformation graph: reduce Python-level loops, avoid redundant work, keep operations vectorized and let the query engine optimize the plan.</p>
+    <h2>Transferable lesson</h2><p>Before adding machines, profile the computational model. A more appropriate engine can change both latency and the complexity of the infrastructure you need to operate.</p>
+  </article>
+</Base>

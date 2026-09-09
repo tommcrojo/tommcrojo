@@ -1,42 +1,56 @@
-## Tomas Campoy Rojo
+# tomcrojo.com
 
-Data Engineer building production batch, lakehouse, and streaming pipelines with Python, SQL, dbt, Spark, Airflow, AWS, and Azure.
+Personal website and technical portfolio for **Tomás Campoy Rojo**.
 
-AWS Certified Data Engineer - Associate (February 2026) and Azure Databricks Platform Architect.
+The site is designed as a public proof layer around my work in **data engineering, data platforms, AI systems, cloud architecture, automation, performance and reliability**.
 
-Open to Data Engineer roles in Madrid or remote.
+## Structure
 
-## Selected Projects
+- `/` — positioning, selected outcomes and paths to work together
+- `/work` — professional case studies and measurable operational improvements
+- `/projects` — public engineering projects
+- `/writing` — technical notes on data platforms, AI infrastructure and systems reliability
+- `/about` — background, technical focus and current interests
 
-### [AWS GDPR-Compliant Healthcare Data Pipeline](https://github.com/tomcrojo/aws-gdpr-healthcare-pipeline)
-AWS-native pipeline designed for 10M+ healthcare records per day with GDPR Article 17 compliance.
-- Impact: ~65s erasure SLA, 8,500+ records/s ETL throughput
-- Stack: AWS Glue, Athena, Redshift Serverless, Lambda, KMS, CloudFormation
+## Technical direction
 
-### [Azure Medallion Pipeline](https://github.com/tomcrojo/azure-medallion-pipeline)
-Azure lakehouse pipeline implementing Bronze, Silver, and Gold layers with infrastructure provisioned through Terraform.
-- Scope: 7M+ orders, 200K customers, 500 products
-- Stack: Terraform, Azure Data Factory, Databricks, PySpark, Delta Lake
+The site is intentionally static and crawlable. It uses Astro with canonical URLs, structured `Person` metadata, `robots.txt` and `llms.txt` so the same public evidence is legible to people, search engines and AI retrieval systems.
 
-### [Student Data Pipeline](https://github.com/tomcrojo/student-data-pipeline)
-Production ETL pipeline consolidating academic data from multiple sources into analytics-ready models.
-- Impact: runtime reduced from 15 min to ~5 min, production errors down 90%
-- Stack: dbt, Airflow, DuckDB, PostgreSQL, Docker, GitHub Actions
+## Selected public work
 
-### [Streaming Orders Pipeline](https://github.com/tomcrojo/streaming-orders-pipeline)
-Real-time order processing pipeline built around event-driven ingestion and streaming quality checks.
-- Stack: Kafka, Spark Structured Streaming, Iceberg, MinIO, Streamlit
-- Focus: exactly-once semantics, watermarking, windowed aggregations, anomaly detection
+- [AWS GDPR-Compliant Healthcare Pipeline](https://github.com/tomcrojo/aws-gdpr-healthcare-pipeline)
+- [Azure Medallion Pipeline](https://github.com/tomcrojo/azure-medallion-pipeline)
+- [Streaming Orders Pipeline](https://github.com/tomcrojo/streaming-orders-pipeline)
+- [Student Data Pipeline](https://github.com/tomcrojo/student-data-pipeline)
+- [Pandas → Polars Migration Command](https://github.com/tomcrojo/pandas-polars-migration-claude)
+- [Security Log Analytics](https://github.com/tomcrojo/security-log-analytics)
 
-## Focus
+## GEO / discovery decisions
 
-- Batch pipelines and ELT modeling
-- Lakehouse and medallion architectures
-- Data quality, reliability, and operability
-- Cloud data engineering on AWS and Azure
+- Canonical identity is `Tomás Campoy Rojo`.
+- The primary entity relationship is Tomás → data engineering / data platforms / AI systems; employer context is supporting evidence rather than the center of the brand.
+- `Person` JSON-LD links the website, current employer, GitHub and LinkedIn and declares the relevant technical domains.
+- Pages are static and readable without JavaScript.
+- `robots.txt` explicitly allows `OAI-SearchBot`.
+- `llms.txt` provides a compact machine-readable description, topic map and selected writing.
+- Case studies and essays use stable descriptive URLs and self-contained introductions.
 
-## Contact
+## Development
 
-- LinkedIn: [linkedin.com/in/tomcrojo](https://linkedin.com/in/tomcrojo)
-- Manfred: [mnf.red/tommcrojo](https://mnf.red/tommcrojo)
-- Email: `tomdata03@protonmail.com`
+```bash
+npm install
+npm run dev
+```
+
+Production build:
+
+```bash
+npm run build
+npm run preview
+```
+
+## Editorial rule
+
+Professional case studies should include only information that is safe to make public. Avoid internal credentials, schemas, personal data, proprietary source code, confidential metrics, and claims that cannot be defended with evidence.
+
+Canonical domain: [tomcrojo.com](https://tomcrojo.com)

@@ -1,0 +1,21 @@
+---
+import Base from '../../layouts/Base.astro';
+---
+<Base type="article" title="Building a context assembler from first principles — Tomás Campoy Rojo" description="A practical architecture for token-budgeted AI context: retrieval, prioritization, compression, tool state and durable memory.">
+  <section class="page-intro"><div class="eyebrow">AI systems · Context engineering</div><h1>Building a context assembler from first principles.</h1><p>Context engineering is not the act of stuffing more tokens into a prompt. It is the problem of deciding which information deserves scarce attention right now.</p></section>
+  <article class="article">
+    <p class="kicker">A useful context layer should behave more like a query planner than a transcript dump: retrieve broadly, score deliberately, compress where safe and preserve the evidence needed for the next decision.</p>
+    <h2>The inputs are heterogeneous</h2>
+    <p>An agent may need user instructions, durable preferences, recent conversation state, retrieved documents, tool outputs, code, plans and the current workflow checkpoint. Treating all of those as one undifferentiated text buffer makes both relevance and debugging worse.</p>
+    <h2>Budget before retrieval</h2>
+    <p>I prefer to define a token budget by information class before assembling the final prompt. System constraints and current task state are protected. Retrieved evidence competes for a bounded allocation. Historical context is compressed aggressively unless a precise detail is required.</p>
+    <h2>Retrieval is only the first stage</h2>
+    <p>The assembler should retrieve candidates from multiple sources, score them against the current task, deduplicate overlapping evidence and rerank the survivors. High-recall retrieval and high-precision context selection are separate problems.</p>
+    <h2>Preserve provenance</h2>
+    <p>Every inserted fact should retain enough metadata to explain where it came from. That helps with citations, conflict resolution, freshness checks and post-mortems when an agent makes a bad decision from stale or low-quality context.</p>
+    <h2>Compression should be asymmetric</h2>
+    <p>Some information can be summarized safely; some cannot. A long discussion about design preferences can often become a compact constraint. Exact API parameters, identifiers, commands or acceptance criteria should usually survive intact.</p>
+    <h2>A context assembler is infrastructure</h2>
+    <p>Once retrieval, memory and tools become important, context construction deserves its own tests, metrics and failure modes. Useful measurements include retrieval hit rate, redundancy, token utilization, evidence freshness and whether critical constraints survived assembly.</p>
+  </article>
+</Base>

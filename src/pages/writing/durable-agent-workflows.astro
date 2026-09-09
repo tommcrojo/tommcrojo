@@ -1,0 +1,21 @@
+---
+import Base from '../../layouts/Base.astro';
+---
+<Base type="article" title="Durable workflows beat clever agent loops — Tomás Campoy Rojo" description="Why AI-agent workflows need checkpoints, explicit state transitions, idempotency, recovery and human approval boundaries.">
+  <section class="page-intro"><div class="eyebrow">Agents · Orchestration · Reliability</div><h1>Durable workflows beat clever agent loops.</h1><p>Long-running agent work should survive process crashes, model failures and partial completion without forcing the system to rediscover its own history.</p></section>
+  <article class="article">
+    <p class="kicker">The more valuable the workflow, the less acceptable it is to represent progress only inside a conversation buffer.</p>
+    <h2>Make progress explicit</h2>
+    <p>A durable workflow records its current state outside the model: what step is active, which inputs produced it, which artifacts exist and which actions have already committed side effects. That state becomes the source of truth for resumption.</p>
+    <h2>Checkpoints change recovery</h2>
+    <p>Without checkpoints, a failure halfway through a ten-step task often means replaying everything or asking the model to infer where it stopped. With checkpoints, the system can restart from a known boundary and rehydrate only the context needed for the next step.</p>
+    <h2>Idempotency is an agent primitive</h2>
+    <p>Retries are useful only when repeating an action is safe. Read operations are usually easy. Writes require idempotency keys, existence checks, compare-and-swap semantics or explicit reconciliation logic. An agent should never solve uncertainty by blindly repeating side effects.</p>
+    <h2>Human approval is a state transition</h2>
+    <p>Approval should be modeled as part of the workflow, not as an informal message in the middle of a chat. The system should know what is awaiting approval, what evidence is presented and which exact action becomes authorized when approval arrives.</p>
+    <h2>Deterministic shell, probabilistic core</h2>
+    <p>I like architectures where the workflow controls ordering, persistence, retries and permissions while the model handles ambiguous reasoning inside bounded steps. This keeps stochastic intelligence where it is useful without asking it to reinvent orchestration on every turn.</p>
+    <h2>The mini-Temporal test</h2>
+    <p>If an agent workflow becomes important enough, it starts to rediscover ideas from systems such as Temporal: durable execution, replay, retries, timers and explicit workflow state. That is a useful signal. Production agent infrastructure is converging toward workflow engineering for a reason.</p>
+  </article>
+</Base>

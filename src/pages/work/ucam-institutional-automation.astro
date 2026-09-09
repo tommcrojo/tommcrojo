@@ -1,0 +1,14 @@
+---
+import Base from '../../layouts/Base.astro';
+---
+<Base type="article" title="Institutional workflow automation at UCAM — Tomás Campoy Rojo" description="Case study: how Tomás Campoy Rojo approached automation of recurring institutional data workflows at UCAM.">
+  <section class="page-intro"><div class="eyebrow">UCAM · Case study</div><h1>Turning recurring institutional workflows into reproducible data systems.</h1><p>Tomás Campoy Rojo is a Data Engineer at Universidad Católica San Antonio de Murcia (UCAM). This case covers a recurring pattern in my work: replacing fragile, manual processing with controlled, inspectable pipelines.</p></section>
+  <article class="article">
+    <h2>The problem</h2><p>University operations generate a large amount of recurring analytical work: responses arrive from forms and survey platforms, data is exported in inconsistent formats, transformations are repeated by hand, and the final output must be distributed to stakeholders on a deadline.</p>
+    <p>In one automation project, a process that previously consumed roughly two weeks of manual effort was reduced to under an hour for more than 3,000 responses.</p>
+    <h2>Engineering approach</h2><p>I treated the workflow as a small data product rather than a script. Inputs were normalized first; transformations were made explicit and repeatable; validation steps were added around identifiers and expected distributions; and outputs were generated in the exact structure required by downstream users.</p>
+    <blockquote>The useful abstraction was not “automate the spreadsheet.” It was “define the dataset, the transformation contract, and the delivery step.”</blockquote>
+    <h2>Why this matters</h2><p>Time savings are the obvious metric, but consistency is more valuable. Once a workflow becomes deterministic, it can be rerun, audited, improved and eventually integrated into a broader data platform.</p>
+    <h2>Boundaries</h2><p>This public summary intentionally excludes internal schemas, credentials, personal data and organization-specific implementation details.</p>
+  </article>
+</Base>

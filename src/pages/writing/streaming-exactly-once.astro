@@ -1,0 +1,14 @@
+---
+import Base from '../../layouts/Base.astro';
+---
+<Base type="article" title="Exactly-once is an end-to-end property — Tomás Campoy Rojo" description="A technical note on exactly-once semantics across Kafka, Spark Structured Streaming and Apache Iceberg.">
+<section class="page-intro"><div class="eyebrow">Kafka · Spark · Iceberg</div><h1>Exactly-once is an end-to-end property.</h1><p>A streaming system does not become exactly-once because one component has an exactly-once checkbox.</p></section>
+<article class="article">
+<h2>The path</h2><p>In my public streaming-orders project, events are produced to Kafka, processed by Spark Structured Streaming and persisted into Iceberg tables. The system also keeps a quarantine path for invalid data and computes windowed metrics and anomalies.</p>
+<h2>Producer side</h2><p>Kafka producer idempotence and <code>acks=all</code> reduce duplicate writes caused by retries. That solves one segment of the path, not the whole guarantee.</p>
+<h2>Processing side</h2><p>Spark checkpoints bind consumed offsets to output progress. If the consumer restarts, it can resume from a known processing state rather than reinterpreting the stream from an arbitrary point.</p>
+<h2>Storage side</h2><p>Iceberg provides ACID table commits with optimistic concurrency. This gives the sink a transactional boundary that plain object writes do not provide.</p>
+<h2>Late data and quality are separate concerns</h2><p>Watermarks define how long stateful aggregations wait for late arrivals. Quality rules determine whether a record belongs in the analytical path at all. Conflating the two produces confusing failure modes.</p>
+<p><a class="button" href="https://github.com/tomcrojo/streaming-orders-pipeline">View repository ↗</a></p>
+</article>
+</Base>
