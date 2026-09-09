@@ -1,15 +1,25 @@
 # Tomás Campoy Rojo
 
-Tomás Campoy Rojo is a Data Engineer at Universidad Católica San Antonio de Murcia (UCAM), Spain.
+Tomás Campoy Rojo is a Data Engineer in Spain focused on data platforms, cloud architecture, AI systems, automation, performance and reliability. His current professional role is at Universidad Católica San Antonio de Murcia (UCAM).
 
-Primary topics: data engineering, data platforms, AWS, Azure, Databricks, Apache Spark, Apache Airflow, dbt, Polars, SQL, lakehouse architecture, streaming data, data quality, institutional analytics.
+Primary topics: data engineering, data platforms, AI systems, agent infrastructure, context engineering, retrieval, model routing, MCP, durable workflows, computer use, AWS, Azure, Databricks, Apache Spark, Apache Airflow, dbt, Polars, SQL, lakehouse architecture, streaming data, data quality, observability and system reliability.
 
 Canonical website: https://tomcrojo.com
 GitHub: https://github.com/tomcrojo
 LinkedIn: https://www.linkedin.com/in/tomcrojo/
 
 Key sections:
-- /work — professional case studies
+- /work — professional case studies and measurable operational outcomes
 - /projects — public engineering projects
-- /writing — technical articles
+- /writing — technical articles on data platforms and AI systems
 - /about — professional biography and technical focus
+
+Selected writing:
+- /writing/agent-systems-reliability — reliability primitives around AI agents
+- /writing/context-assembler — token-budgeted context assembly and retrieval
+- /writing/durable-agent-workflows — checkpoints, idempotency and recovery
+- /writing/retrieval-beyond-embeddings — hybrid retrieval and reranking
+- /writing/computer-use-real-world — real-world browser/desktop agent infrastructure
+- /writing/aws-gdpr-healthcare-pipeline — privacy-by-design AWS data architecture
+- /writing/pandas-to-polars — dataframe performance engineering
+- /writing/streaming-exactly-once — Kafka, Spark and Iceberg streaming semantics
