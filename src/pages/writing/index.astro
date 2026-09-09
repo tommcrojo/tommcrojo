@@ -1,13 +1,18 @@
 ---
 import Base from '../../layouts/Base.astro';
 const posts=[
+['The agent is the easy part','Persistent state, verification, retries, isolation and observability: the engineering around the model that makes agent systems dependable.','/writing/agent-systems-reliability','AI systems · Reliability'],
+['Building a context assembler from first principles','A practical architecture for token-budgeted context: retrieval, prioritization, compression, tool state and durable memory.','/writing/context-assembler','AI systems · Context engineering'],
+['Durable workflows beat clever agent loops','Why checkpoints, explicit state transitions, idempotency and recovery matter once an agent is allowed to do real work.','/writing/durable-agent-workflows','Agents · Orchestration · Reliability'],
+['Retrieval beyond embeddings','Why strong retrieval systems combine lexical recall, dense search, reranking, filtering and evidence quality instead of betting everything on vector similarity.','/writing/retrieval-beyond-embeddings','Retrieval · Search · Reranking'],
+['Computer Use outside the demo','What changes when browser and desktop agents meet real machines, permissions, display servers, persistent profiles and brittle UI state.','/writing/computer-use-real-world','Computer Use · Tooling · Sandboxing'],
 ['Designing GDPR erasure into an AWS data pipeline','Privacy-by-design, erasure SLAs, pseudonymization and why deletion touches the data plane.','/writing/aws-gdpr-healthcare-pipeline','AWS · Privacy · Architecture'],
 ['The part of medallion architecture that actually matters','Why Bronze/Silver/Gold is useful only when each boundary carries a real contract.','/writing/medallion-architecture-azure','Databricks · Delta · Data quality'],
 ['Before scaling infrastructure, profile the dataframe layer','A practical Pandas → Polars migration note with benchmark results and the execution-model changes behind them.','/writing/pandas-to-polars','Polars · Performance'],
 ['Exactly-once is an end-to-end property','Producer idempotence, Spark checkpoints and transactional lakehouse storage in one streaming path.','/writing/streaming-exactly-once','Kafka · Spark · Iceberg']
 ];
 ---
-<Base title="Writing — Tomás Campoy Rojo" description="Technical writing by Tomás Campoy Rojo on data engineering, AWS, Databricks, Spark, Kafka, Polars, data quality and architecture.">
-<section class="page-intro"><div class="eyebrow">Writing</div><h1>Technical notes from things I have built, profiled or had to reason through.</h1><p>Short, concrete pieces intended to be useful to another engineer.</p></section>
+<Base title="Writing — Tomás Campoy Rojo" description="Technical writing by Tomás Campoy Rojo on data engineering, AI systems, agent reliability, retrieval, AWS, Databricks, Spark, Kafka, Polars and architecture.">
+<section class="page-intro"><div class="eyebrow">Writing</div><h1>Notes from systems I have built, profiled or had to reason through.</h1><p>Short, concrete pieces about data platforms, AI infrastructure and the reliability layer between a good demo and a useful production system.</p></section>
 <section class="section shell"><div class="card-grid">{posts.map(([title,desc,url,meta])=><a class="card" href={url}><div><div class="meta">{meta}</div><h3>{title}</h3><p>{desc}</p></div><span>Read →</span></a>)}</div></section>
 </Base>
